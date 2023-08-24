@@ -11,6 +11,7 @@ import com.fisagroup.pokemon.data.model.Result;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 import lombok.extern.slf4j.Slf4j;
 
 /**
@@ -37,12 +38,9 @@ public class GenerateData {
             resultBuilder.name(pokemon.getName());
             resultBuilder.height(pokemon.getHeight() / valor);
             resultBuilder.weight(pokemon.getWeight() / valor);
-            List<Result.Type> types = new ArrayList<>();
-            pokemon.getTypes().forEach(type -> {
-               PokemonType pokemonType = pokemonClientApi.getTypeInfo(type.getName());
-                types.add(Result.Type.builder().name(type.getName())
-                        .build());
-            });
+            List<String> types = pokemon.getTypes().stream()
+                    .map(Pokemon.Types::getName).collect(Collectors.toList());
+            resultBuilder.types(types);
             resultBuilder.types(types);
             log.info(resultBuilder.toString());
             return Optional.of(resultBuilder.build());

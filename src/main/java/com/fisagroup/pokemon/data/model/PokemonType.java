@@ -7,10 +7,6 @@ package com.fisagroup.pokemon.data.model;
 import lombok.Builder;
 import lombok.Getter;
 
-/**
- *
- * @author sland
- */
 @Builder
 @Getter
 public class PokemonType {

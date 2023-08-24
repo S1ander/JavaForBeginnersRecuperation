@@ -20,7 +20,7 @@ public class Result {
     private String description;
     private double height;
     private double weight;
-    private List<Type> types;
+    private List<String> types;
  
     public static class ResultBuilder {
 
@@ -35,16 +35,16 @@ public class Result {
         }
     }
 
-    @Builder
-    @Getter
-    public static class Type {
-        private int id;
-        private String name;
-
-        @Override
-        public String toString() {
-            return String.format("  %s", name);
-        }
-    }
+//    @Builder
+//    @Getter
+//    public static class Type {
+//        private int id;
+//        private String name;
+//
+//        @Override
+//        public String toString() {
+//            return String.format("  %s", name);
+//        }
+//    }
 }
    

@@ -6,7 +6,6 @@ package com.fisagroup.pokemon.data.service;
 
 import com.fisagroup.pokemon.data.model.Result;
 import java.util.Optional;
-import org.springframework.stereotype.Service;
 
 /**
  *
