@@ -1,0 +1,16 @@
+com\fisagroup\pokemon\data\PokemonAplication.class
+com\fisagroup\pokemon\data\model\Pokemon.class
+com\fisagroup\pokemon\data\service\PokemonService.class
+com\fisagroup\pokemon\data\model\Pokemon$PokemonBuilder.class
+com\fisagroup\pokemon\data\model\Result$Type.class
+com\fisagroup\pokemon\data\model\Result$Type$TypeBuilder.class
+com\fisagroup\pokemon\data\model\Pokemon$Types$TypesBuilder.class
+com\fisagroup\pokemon\data\client\PokemonClientApi.class
+com\fisagroup\pokemon\data\model\PokemonType$PokemonTypeBuilder.class
+com\fisagroup\pokemon\data\controllers\GenerateData.class
+com\fisagroup\pokemon\data\model\Pokemon$Types.class
+com\fisagroup\pokemon\data\model\PokemonType.class
+com\fisagroup\pokemon\data\model\Result$ResultBuilder.class
+com\fisagroup\pokemon\data\model\Result.class
+com\fisagroup\pokemon\data\controllers\PokemonController.class
+com\fisagroup\pokemon\data\service\impl\PokemonServiceImpl.class
